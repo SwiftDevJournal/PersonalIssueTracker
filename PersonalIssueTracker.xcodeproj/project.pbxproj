@@ -24,6 +24,7 @@
 		4D4D6E6328C163BE005D5C91 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E6228C163BE005D5C91 /* ProjectListView.swift */; };
 		4D4D6E6528C2953C005D5C91 /* AddProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E6428C2953C005D5C91 /* AddProjectView.swift */; };
 		4D4D6E6628C2953C005D5C91 /* AddProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E6428C2953C005D5C91 /* AddProjectView.swift */; };
+		4D4D6E6928C29EE8005D5C91 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E6828C29EE8005D5C91 /* ProjectListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		4D4D6E4828C136DE005D5C91 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		4D4D6E6228C163BE005D5C91 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
 		4D4D6E6428C2953C005D5C91 /* AddProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectView.swift; sourceTree = "<group>"; };
+		4D4D6E6828C29EE8005D5C91 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		4D4D6E6728C29EBE005D5C91 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				4D4D6E6828C29EE8005D5C91 /* ProjectListView.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				4D4D6E4C28C136DE005D5C91 /* PersonalIssueTrackerApp.swift in Sources */,
 				4D4D6E5028C136DE005D5C91 /* Persistence.swift in Sources */,
 				4D4D6E4A28C136DE005D5C91 /* PersonalIssueTracker.xcdatamodeld in Sources */,
+				4D4D6E6928C29EE8005D5C91 /* ProjectListView.swift in Sources */,
 				4D4D6E4E28C136DE005D5C91 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
