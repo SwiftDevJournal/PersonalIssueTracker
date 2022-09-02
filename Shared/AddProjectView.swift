@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddProjectView: View {
     @Environment(\.presentationMode) var presentationMode
+    @Environment(\.managedObjectContext) private var viewContext
     @State private var newProjectName = "New Project"
     
     var body: some View {
@@ -30,6 +31,7 @@ struct AddProjectView: View {
                 Spacer()
                 
                 Button( action: {
+                    addProject()
                     presentationMode.wrappedValue.dismiss()
                 }, label: {
                     Text("Add Project")
@@ -38,6 +40,22 @@ struct AddProjectView: View {
             }
         }
         .padding()
+    }
+    
+    private func addProject() {
+        withAnimation {
+            let newProject = Project(context: viewContext)
+            newProject.name = newProjectName
+
+            do {
+                try viewContext.save()
+            } catch {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                let nsError = error as NSError
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
+        }
     }
 }
 
