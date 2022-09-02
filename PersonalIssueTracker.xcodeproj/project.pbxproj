@@ -97,6 +97,7 @@
 		4D4D6E1928C136DC005D5C91 = {
 			isa = PBXGroup;
 			children = (
+				4D4D6E6728C29EBE005D5C91 /* iOS */,
 				4D4D6E1E28C136DC005D5C91 /* Shared */,
 				4D4D6E3028C136DE005D5C91 /* macOS */,
 				4D4D6E3928C136DE005D5C91 /* Tests iOS */,
@@ -154,6 +155,13 @@
 				4D4D6E4828C136DE005D5C91 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		4D4D6E6728C29EBE005D5C91 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
