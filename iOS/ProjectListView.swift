@@ -29,6 +29,7 @@ struct ProjectListView: View {
         .sheet(isPresented: $showAddSheet) {
             AddProjectView()
         }
+    }
 }
 
 struct ProjectListView_Previews: PreviewProvider {
