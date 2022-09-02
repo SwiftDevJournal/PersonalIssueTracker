@@ -8,8 +8,36 @@
 import SwiftUI
 
 struct AddProjectView: View {
+    @Environment(\.presentationMode) var presentationMode
+    @State private var newProjectName = "New Project"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Enter the name for the new project")
+                .font(.headline)
+            TextField("Name", text: $newProjectName)
+                .padding(.vertical)
+            
+            HStack {
+                Button(action: {
+                    presentationMode.wrappedValue.dismiss()
+
+                }, label: {
+                    Text("Cancel")
+                })
+                .keyboardShortcut(.cancelAction)
+
+                Spacer()
+                
+                Button( action: {
+                    presentationMode.wrappedValue.dismiss()
+                }, label: {
+                    Text("Add Project")
+                })
+                .keyboardShortcut(.defaultAction)
+            }
+        }
+        .padding()
     }
 }
 
