@@ -8,13 +8,30 @@
 import SwiftUI
 
 struct IssueDetailView: View {
+    @StateObject var issue: Issue
+    @State var summaryText: String
+    @State var descriptionText: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        // Show the details of the selected issue.
+        ScrollView {
+            HStack() {
+                Text("Summary: ")
+                Spacer()
+                TextField("Summary: ", text: $summaryText)
+                    .padding()
+            }
+            HStack() {
+                Text("Description: ")
+                TextEditor(text: $descriptionText)
+            }
+            .padding()
+        }
     }
 }
 
 struct IssueDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        IssueDetailView()
+        IssueDetailView(issue: Issue(), summaryText: "Summary", descriptionText: "Description of issue")
     }
 }
