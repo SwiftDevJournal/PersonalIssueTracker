@@ -17,7 +17,9 @@ struct IssueListView: View {
             Text("Issues")
                 .font(.title)
             List(issueArray) { issue in
-                Text(issue.title ?? "")
+                NavigationLink(destination: IssueDetailView(issue: issue, summaryText: issue.title ?? "", descriptionText: issue.contents ?? ""), tag: issue, selection: $selection) {
+                    Text(issue.title ?? "")
+                }
             }
             HStack {
                 Button(action: { showAddSheet = true }, label: {
