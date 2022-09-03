@@ -21,6 +21,7 @@ struct ProjectListView: View {
         VStack {
             Text("Projects")
                 .font(.title)
+            // How do I create a navigation link? I get a syntax error when I try to use $project as the project when setting the destination to IssueListView.
             List(projects) { project in
                 Text("\(project.name!)")
             }
