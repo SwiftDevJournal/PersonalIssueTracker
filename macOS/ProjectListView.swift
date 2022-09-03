@@ -10,6 +10,7 @@ import SwiftUI
 struct ProjectListView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @State private var showAddSheet = false
+    @State private var selection: Project? = nil
     
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Project.name, ascending: true)],
@@ -30,7 +31,8 @@ struct ProjectListView: View {
 
                 Spacer()
 
-                Button(action: {  }, label: {
+                // How do I get the selected item to the delete them.
+                Button(action: { deleteProject() }, label: {
                     Label("Delete", systemImage: "trash")
                         .foregroundColor(.red)
                 })
@@ -43,6 +45,23 @@ struct ProjectListView: View {
             AddProjectView()
         }
         
+    }
+    
+    private func deleteProject() {
+        withAnimation {
+            if let selection = self.selection {
+                viewContext.delete(selection)
+            }
+
+            do {
+                try viewContext.save()
+            } catch {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                let nsError = error as NSError
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
+        }
     }
 }
 
