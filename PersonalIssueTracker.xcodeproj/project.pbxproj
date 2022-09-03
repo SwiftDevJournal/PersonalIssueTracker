@@ -25,6 +25,8 @@
 		4D4D6E6528C2953C005D5C91 /* AddProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E6428C2953C005D5C91 /* AddProjectView.swift */; };
 		4D4D6E6628C2953C005D5C91 /* AddProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E6428C2953C005D5C91 /* AddProjectView.swift */; };
 		4D4D6E6928C29EE8005D5C91 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E6828C29EE8005D5C91 /* ProjectListView.swift */; };
+		4D4D6E6C28C2EB5C005D5C91 /* IssueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E6B28C2EB5C005D5C91 /* IssueListView.swift */; };
+		4D4D6E6D28C2EB5C005D5C91 /* IssueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E6B28C2EB5C005D5C91 /* IssueListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,7 @@
 		4D4D6E6228C163BE005D5C91 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
 		4D4D6E6428C2953C005D5C91 /* AddProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectView.swift; sourceTree = "<group>"; };
 		4D4D6E6828C29EE8005D5C91 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
+		4D4D6E6B28C2EB5C005D5C91 /* IssueListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,7 @@
 				4D4D6E2428C136DE005D5C91 /* Assets.xcassets */,
 				4D4D6E1F28C136DC005D5C91 /* PersonalIssueTracker.xcdatamodeld */,
 				4D4D6E6428C2953C005D5C91 /* AddProjectView.swift */,
+				4D4D6E6B28C2EB5C005D5C91 /* IssueListView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -328,6 +332,7 @@
 				4D4D6E6528C2953C005D5C91 /* AddProjectView.swift in Sources */,
 				4D4D6E4C28C136DE005D5C91 /* PersonalIssueTrackerApp.swift in Sources */,
 				4D4D6E5028C136DE005D5C91 /* Persistence.swift in Sources */,
+				4D4D6E6C28C2EB5C005D5C91 /* IssueListView.swift in Sources */,
 				4D4D6E4A28C136DE005D5C91 /* PersonalIssueTracker.xcdatamodeld in Sources */,
 				4D4D6E6928C29EE8005D5C91 /* ProjectListView.swift in Sources */,
 				4D4D6E4E28C136DE005D5C91 /* ContentView.swift in Sources */,
@@ -341,6 +346,7 @@
 				4D4D6E6628C2953C005D5C91 /* AddProjectView.swift in Sources */,
 				4D4D6E4D28C136DE005D5C91 /* PersonalIssueTrackerApp.swift in Sources */,
 				4D4D6E5128C136DE005D5C91 /* Persistence.swift in Sources */,
+				4D4D6E6D28C2EB5C005D5C91 /* IssueListView.swift in Sources */,
 				4D4D6E4B28C136DE005D5C91 /* PersonalIssueTracker.xcdatamodeld in Sources */,
 				4D4D6E4F28C136DE005D5C91 /* ContentView.swift in Sources */,
 				4D4D6E6328C163BE005D5C91 /* ProjectListView.swift in Sources */,
