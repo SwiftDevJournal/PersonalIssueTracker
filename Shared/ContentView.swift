@@ -19,6 +19,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ProjectListView()
+            EmptyView()
+            EmptyView()
         }
     }
 }
