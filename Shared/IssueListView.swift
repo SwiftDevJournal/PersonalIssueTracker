@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct IssueListView: View {
-    @Binding var project: Project
+    @StateObject var project: Project
     
     var body: some View {
         VStack {
@@ -27,6 +27,6 @@ struct IssueListView: View {
 
 struct IssueListView_Previews: PreviewProvider {
     static var previews: some View {
-        IssueListView(project: .constant(Project()))
+        IssueListView(project: Project())
     }
 }
