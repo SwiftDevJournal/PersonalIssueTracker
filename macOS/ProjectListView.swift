@@ -24,6 +24,12 @@ struct ProjectListView: View {
             List(projects) { project in
                 Text("\(project.name!)")
             }
+            .onAppear {
+                selection = projects.first
+            }
+            .onDeleteCommand {
+                deleteProject()
+            }
             HStack {
                 Button(action: { showAddSheet = true }, label: {
                     Label("Add", systemImage: "note.text.badge.plus")
