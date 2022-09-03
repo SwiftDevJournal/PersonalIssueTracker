@@ -21,9 +21,11 @@ struct ProjectListView: View {
         VStack {
             Text("Projects")
                 .font(.title)
-            // How do I create a navigation link? I get a syntax error when I try to use $project as the project when setting the destination to IssueListView. I have a binding for the issue list view. That is what's preventing me from using the project variable in the issue list view as the destination for the navigation link.
             List(projects) { project in
-                Text("\(project.name!)")
+                NavigationLink(destination: IssueListView(project: project), tag: project, selection: $selection) {
+                    Text("\(project.name!)")
+                }
+                
             }
             .onAppear {
                 selection = projects.first
