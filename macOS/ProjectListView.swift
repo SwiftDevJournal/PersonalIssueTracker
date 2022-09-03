@@ -23,7 +23,7 @@ struct ProjectListView: View {
                 .font(.title)
             List(projects) { project in
                 NavigationLink(destination: IssueListView(project: project), tag: project, selection: $selection) {
-                    Text("\(project.name!)")
+                    Text(project.name ?? "")
                 }
                 
             }
