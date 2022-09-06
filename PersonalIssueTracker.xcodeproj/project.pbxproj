@@ -37,6 +37,7 @@
 		4D85946C28C7BBC80006AA01 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D85946A28C7BBC80006AA01 /* CommentView.swift */; };
 		4D85946E28C7BCEE0006AA01 /* AddCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D85946D28C7BCEE0006AA01 /* AddCommentView.swift */; };
 		4D85946F28C7BCEE0006AA01 /* AddCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D85946D28C7BCEE0006AA01 /* AddCommentView.swift */; };
+		4D85947128C7C63B0006AA01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D85947028C7C63B0006AA01 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		4D4D6E7428C3DA26005D5C91 /* IssueDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailView.swift; sourceTree = "<group>"; };
 		4D85946A28C7BBC80006AA01 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
 		4D85946D28C7BCEE0006AA01 /* AddCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommentView.swift; sourceTree = "<group>"; };
+		4D85947028C7C63B0006AA01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				4D4D6E6828C29EE8005D5C91 /* ProjectListView.swift */,
+				4D85947028C7C63B0006AA01 /* ContentView.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				4D4D6E6928C29EE8005D5C91 /* ProjectListView.swift in Sources */,
 				4D4D6E4E28C136DE005D5C91 /* ContentView.swift in Sources */,
 				4D85946B28C7BBC80006AA01 /* CommentView.swift in Sources */,
+				4D85947128C7C63B0006AA01 /* ContentView.swift in Sources */,
 				4D85946E28C7BCEE0006AA01 /* AddCommentView.swift in Sources */,
 				4D4D6E6F28C3D30C005D5C91 /* Project.swift in Sources */,
 			);
