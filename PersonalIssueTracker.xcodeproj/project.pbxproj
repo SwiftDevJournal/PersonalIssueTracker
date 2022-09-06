@@ -188,8 +188,8 @@
 		4D4D6E6728C29EBE005D5C91 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				4D4D6E6828C29EE8005D5C91 /* ProjectListView.swift */,
 				4D85947028C7C63B0006AA01 /* ContentView.swift */,
+				4D4D6E6828C29EE8005D5C91 /* ProjectListView.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
