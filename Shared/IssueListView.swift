@@ -17,7 +17,7 @@ struct IssueListView: View {
         VStack {
             Text("Open Issues")
                 .font(.title)
-            List(issueArray) { issue in
+            List(openIssues) { issue in
                 NavigationLink(destination: IssueDetailView(issue: issue, titleText: issue.title ?? "", descriptionText: issue.contents ?? ""), tag: issue, selection: $selection) {
                     Text(issue.title ?? "")
                 }
@@ -44,12 +44,12 @@ struct IssueListView: View {
         }
     }
     
-    var issueArray: [Issue] {
+    var openIssues: [Issue] {
         let allIssues = project.issues?.allObjects as? [Issue] ?? []
-        let openIssues = allIssues.filter {
+        let openOnes = allIssues.filter {
             $0.open == true
         }
-        return openIssues
+        return openOnes
     }
     
     func closeIssue(_ issue: Issue) {
