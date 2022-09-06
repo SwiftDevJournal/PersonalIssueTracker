@@ -38,7 +38,11 @@ struct IssueDetailView: View {
     }
     
     var commentArray: [Comment] {
-        return issue.comments?.allObjects as? [Comment] ?? []
+        let unsortedComments = issue.comments?.allObjects as? [Comment] ?? []
+        let sortedCommentsByDate = unsortedComments.sorted(by: { lhs, rhs in
+            return lhs.creationDate ?? Date() < rhs.creationDate ?? Date()
+        })
+        return sortedCommentsByDate
     }
 }
 
