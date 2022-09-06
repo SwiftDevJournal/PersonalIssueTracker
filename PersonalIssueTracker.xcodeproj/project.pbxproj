@@ -33,6 +33,8 @@
 		4D4D6E7328C3D71C005D5C91 /* AddIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E7128C3D71C005D5C91 /* AddIssueView.swift */; };
 		4D4D6E7528C3DA26005D5C91 /* IssueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E7428C3DA26005D5C91 /* IssueDetailView.swift */; };
 		4D4D6E7628C3DA26005D5C91 /* IssueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E7428C3DA26005D5C91 /* IssueDetailView.swift */; };
+		4D85946B28C7BBC80006AA01 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D85946A28C7BBC80006AA01 /* CommentView.swift */; };
+		4D85946C28C7BBC80006AA01 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D85946A28C7BBC80006AA01 /* CommentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,7 @@
 		4D4D6E6E28C3D30C005D5C91 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		4D4D6E7128C3D71C005D5C91 /* AddIssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIssueView.swift; sourceTree = "<group>"; };
 		4D4D6E7428C3DA26005D5C91 /* IssueDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailView.swift; sourceTree = "<group>"; };
+		4D85946A28C7BBC80006AA01 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,7 @@
 				4D4D6E7128C3D71C005D5C91 /* AddIssueView.swift */,
 				4D4D6E6428C2953C005D5C91 /* AddProjectView.swift */,
 				4D4D6E2428C136DE005D5C91 /* Assets.xcassets */,
+				4D85946A28C7BBC80006AA01 /* CommentView.swift */,
 				4D4D6E2228C136DC005D5C91 /* ContentView.swift */,
 				4D4D6E7428C3DA26005D5C91 /* IssueDetailView.swift */,
 				4D4D6E6B28C2EB5C005D5C91 /* IssueListView.swift */,
@@ -350,6 +354,7 @@
 				4D4D6E4A28C136DE005D5C91 /* PersonalIssueTracker.xcdatamodeld in Sources */,
 				4D4D6E6928C29EE8005D5C91 /* ProjectListView.swift in Sources */,
 				4D4D6E4E28C136DE005D5C91 /* ContentView.swift in Sources */,
+				4D85946B28C7BBC80006AA01 /* CommentView.swift in Sources */,
 				4D4D6E6F28C3D30C005D5C91 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +372,7 @@
 				4D4D6E4B28C136DE005D5C91 /* PersonalIssueTracker.xcdatamodeld in Sources */,
 				4D4D6E4F28C136DE005D5C91 /* ContentView.swift in Sources */,
 				4D4D6E6328C163BE005D5C91 /* ProjectListView.swift in Sources */,
+				4D85946C28C7BBC80006AA01 /* CommentView.swift in Sources */,
 				4D4D6E7028C3D30C005D5C91 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
