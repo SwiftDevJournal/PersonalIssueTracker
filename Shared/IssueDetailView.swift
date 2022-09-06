@@ -25,8 +25,20 @@ struct IssueDetailView: View {
                 Text("Description: ")
                 TextEditor(text: $descriptionText)
             }
+            VStack {
+                Text("Comments")
+                    .bold()
+                ForEach(commentArray) { comment in
+                    CommentView(comment: comment)
+                }
+            }
             .padding()
+            AddCommentView(issue: issue)
         }
+    }
+    
+    var commentArray: [Comment] {
+        return issue.comments?.allObjects as? [Comment] ?? []
     }
 }
 
