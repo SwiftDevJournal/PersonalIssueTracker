@@ -9,16 +9,16 @@ import SwiftUI
 
 struct IssueDetailView: View {
     @StateObject var issue: Issue
-    @State var summaryText: String
+    @State var titleText: String
     @State var descriptionText: String
     
     var body: some View {
         // Show the details of the selected issue.
         ScrollView {
             HStack() {
-                Text("Summary: ")
+                Text("Title: ")
                 Spacer()
-                TextField("Summary: ", text: $summaryText)
+                TextField("Title: ", text: $titleText)
                     .padding()
             }
             HStack() {
@@ -32,6 +32,6 @@ struct IssueDetailView: View {
 
 struct IssueDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        IssueDetailView(issue: Issue(), summaryText: "Summary", descriptionText: "Description of issue")
+        IssueDetailView(issue: Issue(), titleText: "Title", descriptionText: "Description of issue")
     }
 }
