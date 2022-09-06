@@ -10,6 +10,7 @@ import SwiftUI
 struct ProjectListView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @State private var showAddSheet = false
+    @State private var selection: Project? = nil
     
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Project.name, ascending: true)],
@@ -22,7 +23,9 @@ struct ProjectListView: View {
                 .font(.title)
             List {
                 ForEach(projects) { project in
-                    Text("\(project.name!)")
+                    NavigationLink(destination: IssueListView(project: project), tag: project, selection: $selection) {
+                        Text(project.name ?? "")
+                    }
                 }
                 .onDelete(perform: deleteProjects)
             }
