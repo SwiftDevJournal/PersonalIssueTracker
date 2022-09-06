@@ -33,8 +33,7 @@ struct IssueListView: View {
                 Button(action: {
                     closeIssue(selection!)
                 }, label: {
-                    Label("Close", systemImage: "trash")
-                        .foregroundColor(.red)
+                    Label("Close", systemImage: "checkmark.square")
                 })
             }
             .padding(.horizontal, 6)
