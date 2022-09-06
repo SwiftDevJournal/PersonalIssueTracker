@@ -19,8 +19,6 @@ struct ProjectListView: View {
     
     var body: some View {
         VStack {
-            Text("Projects")
-                .font(.title)
             List {
                 ForEach(projects) { project in
                     NavigationLink(destination: IssueListView(project: project), tag: project, selection: $selection) {
