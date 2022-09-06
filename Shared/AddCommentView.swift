@@ -19,6 +19,8 @@ struct AddCommentView: View {
             TextEditor(text: $commentText)
             Button(action: {
                 addComment()
+                // Clear the text editor after adding the comment.
+                commentText = ""
             }, label: {
                 Text("Comment")
             })
