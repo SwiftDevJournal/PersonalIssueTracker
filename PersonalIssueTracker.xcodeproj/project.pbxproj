@@ -15,7 +15,6 @@
 		4D4D6E4B28C136DE005D5C91 /* PersonalIssueTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E1F28C136DC005D5C91 /* PersonalIssueTracker.xcdatamodeld */; };
 		4D4D6E4C28C136DE005D5C91 /* PersonalIssueTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E2128C136DC005D5C91 /* PersonalIssueTrackerApp.swift */; };
 		4D4D6E4D28C136DE005D5C91 /* PersonalIssueTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E2128C136DC005D5C91 /* PersonalIssueTrackerApp.swift */; };
-		4D4D6E4E28C136DE005D5C91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E2228C136DC005D5C91 /* ContentView.swift */; };
 		4D4D6E4F28C136DE005D5C91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E2228C136DC005D5C91 /* ContentView.swift */; };
 		4D4D6E5028C136DE005D5C91 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E2328C136DC005D5C91 /* Persistence.swift */; };
 		4D4D6E5128C136DE005D5C91 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E2328C136DC005D5C91 /* Persistence.swift */; };
@@ -136,7 +135,6 @@
 				4D4D6E6428C2953C005D5C91 /* AddProjectView.swift */,
 				4D4D6E2428C136DE005D5C91 /* Assets.xcassets */,
 				4D85946A28C7BBC80006AA01 /* CommentView.swift */,
-				4D4D6E2228C136DC005D5C91 /* ContentView.swift */,
 				4D4D6E7428C3DA26005D5C91 /* IssueDetailView.swift */,
 				4D4D6E6B28C2EB5C005D5C91 /* IssueListView.swift */,
 				4D4D6E2328C136DC005D5C91 /* Persistence.swift */,
@@ -162,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				4D4D6E3128C136DE005D5C91 /* macOS.entitlements */,
+				4D4D6E2228C136DC005D5C91 /* ContentView.swift */,
 				4D4D6E6228C163BE005D5C91 /* ProjectListView.swift */,
 			);
 			path = macOS;
@@ -360,7 +359,6 @@
 				4D4D6E6C28C2EB5C005D5C91 /* IssueListView.swift in Sources */,
 				4D4D6E4A28C136DE005D5C91 /* PersonalIssueTracker.xcdatamodeld in Sources */,
 				4D4D6E6928C29EE8005D5C91 /* ProjectListView.swift in Sources */,
-				4D4D6E4E28C136DE005D5C91 /* ContentView.swift in Sources */,
 				4D85946B28C7BBC80006AA01 /* CommentView.swift in Sources */,
 				4D85947128C7C63B0006AA01 /* ContentView.swift in Sources */,
 				4D85946E28C7BCEE0006AA01 /* AddCommentView.swift in Sources */,
