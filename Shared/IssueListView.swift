@@ -29,7 +29,8 @@ struct IssueListView: View {
 
                 Spacer()
 
-                // How do I get the selected item to the delete them.
+                // How do I get the list to refresh after closing the issue?
+                // The project list refreshes after deleting a project, but this list doesn't refresh when closing an issue?
                 Button(action: {
                     closeIssue(selection!)
                 }, label: {
