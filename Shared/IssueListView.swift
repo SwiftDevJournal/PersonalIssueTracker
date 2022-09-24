@@ -13,6 +13,8 @@ struct IssueListView: View {
     @State private var selection: Issue? = nil
     @Environment(\.managedObjectContext) private var viewContext
     
+    // I need to add a fetch request that fetches all the open issues in the current project.
+    
     var body: some View {
         VStack {
             Text("Open Issues")
