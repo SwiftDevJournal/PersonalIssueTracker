@@ -12,6 +12,18 @@ enum IssuePriority: Int {
     case low = 1
     case medium = 2
     case high = 3
+    
+    // Convert to string to display in menus
+    func stringValue() -> String {
+        switch(self) {
+        case .low:
+            return "Low"
+        case .medium:
+            return "Medium"
+        case .high:
+            return "High"
+        }
+    }
 }
 
 extension Issue {
