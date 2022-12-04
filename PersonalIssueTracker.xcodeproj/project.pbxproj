@@ -59,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D262855293D321D0029B5ED /* Version 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Version 2.xcdatamodel"; sourceTree = "<group>"; };
 		4D4D6E2028C136DC005D5C91 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		4D4D6E2128C136DC005D5C91 /* PersonalIssueTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalIssueTrackerApp.swift; sourceTree = "<group>"; };
 		4D4D6E2228C136DC005D5C91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -784,6 +785,7 @@
 		4D4D6E1F28C136DC005D5C91 /* PersonalIssueTracker.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				4D262855293D321D0029B5ED /* Version 2.xcdatamodel */,
 				4D4D6E2028C136DC005D5C91 /* Shared.xcdatamodel */,
 			);
 			currentVersion = 4D4D6E2028C136DC005D5C91 /* Shared.xcdatamodel */;
