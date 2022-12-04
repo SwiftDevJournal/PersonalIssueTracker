@@ -8,7 +8,7 @@
 import Foundation
 import CoreData
 
-enum IssuePriority: Int {
+enum IssuePriority: Int, CaseIterable {
     case low = 1
     case medium = 2
     case high = 3
