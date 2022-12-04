@@ -11,6 +11,7 @@ struct AddIssueView: View {
     @StateObject var project: Project
     @State var summaryText: String = ""
     @State var descriptionText: String = ""
+    @State var issuePriority: IssuePriority = .low
     @Environment(\.managedObjectContext) private var viewContext
     @Environment(\.presentationMode) var presentationMode
     
@@ -28,6 +29,13 @@ struct AddIssueView: View {
             HStack() {
                 Text("Description: ")
                 TextEditor(text: $descriptionText)
+            }
+            Picker("Issue Priority:", selection: $issuePriority) {
+                ForEach(IssuePriority.allCases, id: \.self) { priority in
+                    let menuText = priority.stringValue()
+                    Text("\(menuText)")
+                        .tag(priority)
+                }
             }
             HStack {
                 Button(action: {
