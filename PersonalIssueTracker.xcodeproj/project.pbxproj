@@ -788,7 +788,7 @@
 				4D262855293D321D0029B5ED /* Version 2.xcdatamodel */,
 				4D4D6E2028C136DC005D5C91 /* Shared.xcdatamodel */,
 			);
-			currentVersion = 4D4D6E2028C136DC005D5C91 /* Shared.xcdatamodel */;
+			currentVersion = 4D262855293D321D0029B5ED /* Version 2.xcdatamodel */;
 			path = PersonalIssueTracker.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
