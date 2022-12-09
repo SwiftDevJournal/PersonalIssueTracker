@@ -27,14 +27,12 @@ enum IssuePriority: Int, CaseIterable {
 }
 
 extension Issue {
-    @NSManaged private var priorityLevel: Int
-    
     var priority: IssuePriority {
         get {
-            return IssuePriority(rawValue: self.priorityLevel) ?? .low
+            return IssuePriority(rawValue: Int(self.priorityLevel)) ?? .low
         }
         set {
-            self.priorityLevel = newValue.rawValue
+            self.priorityLevel = Int64(newValue.rawValue)
         }
     }
 }
