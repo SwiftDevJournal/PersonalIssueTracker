@@ -20,7 +20,7 @@ struct IssueListView: View {
             Text("Open Issues")
                 .font(.title)
             List(openIssues) { issue in
-                NavigationLink(destination: IssueDetailView(issue: issue, titleText: issue.title ?? "", descriptionText: issue.contents ?? ""), tag: issue, selection: $selection) {
+                NavigationLink(destination: IssueDetailView(issue: issue, titleText: issue.title ?? "", descriptionText: issue.contents ?? "", issuePriority: issue.priority), tag: issue, selection: $selection) {
                     Text(issue.title ?? "")
                 }
             }
