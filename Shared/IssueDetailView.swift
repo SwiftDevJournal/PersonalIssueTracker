@@ -11,6 +11,7 @@ struct IssueDetailView: View {
     @StateObject var issue: Issue
     @State var titleText: String
     @State var descriptionText: String
+    @State var issuePriority: IssuePriority
     
     var body: some View {
         // Show the details of the selected issue.
@@ -25,6 +26,7 @@ struct IssueDetailView: View {
                 Text("Description: ")
                 TextEditor(text: $descriptionText)
             }
+            Text(issuePriority.stringValue())
             VStack {
                 Text("Comments")
                     .bold()
@@ -48,6 +50,6 @@ struct IssueDetailView: View {
 
 struct IssueDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        IssueDetailView(issue: Issue(), titleText: "Title", descriptionText: "Description of issue")
+        IssueDetailView(issue: Issue(), titleText: "Title", descriptionText: "Description of issue", issuePriority: .low)
     }
 }
