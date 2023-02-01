@@ -48,6 +48,7 @@ struct IssueListView: View {
     }
     
     // How can I update open issues when closing an issue?
+    // FIXME: Come up with a better way to get the open issues. Using a computed property works initially but can't ever change.
     var openIssues: [Issue] {
         let allIssues = project.issues?.allObjects as? [Issue] ?? []
         let openOnes = allIssues.filter {
