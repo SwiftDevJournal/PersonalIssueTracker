@@ -15,8 +15,6 @@ struct IssueListView: View {
     // Workaround to get the list to refresh when closing an issue.
     @State private var refreshID = UUID()
     
-    // I need to add a fetch request that fetches all the open issues in the current project.
-    
     var body: some View {
         VStack {
             Text("Open Issues")
@@ -34,8 +32,6 @@ struct IssueListView: View {
 
                 Spacer()
 
-                // How do I get the list to refresh after closing the issue?
-                // The project list refreshes after deleting a project, but this list doesn't refresh when closing an issue?
                 Button(action: {
                     closeIssue(selection!)
                 }, label: {
@@ -50,8 +46,6 @@ struct IssueListView: View {
         }
     }
     
-    // How can I update open issues when closing an issue?
-    // FIXME: Come up with a better way to get the open issues. Using a computed property works initially but can't ever change.
     var openIssues: [Issue] {
         let allIssues = project.issues?.allObjects as? [Issue] ?? []
         let openOnes = allIssues.filter {
