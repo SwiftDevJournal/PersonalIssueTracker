@@ -26,7 +26,17 @@ struct IssueDetailView: View {
                 Text("Description: ")
                 TextEditor(text: $descriptionText)
             }
-            Text(issuePriority.stringValue())
+            Picker("Issue Priority:", selection: $issuePriority) {
+                ForEach(IssuePriority.allCases, id: \.self) { priority in
+                    let menuText = priority.stringValue()
+                    Text("\(menuText)")
+                        .tag(priority)
+                }
+            }
+            .onChange(of: issuePriority) { newValue in
+                issue.priority = issuePriority
+            }
+            
             VStack {
                 Text("Comments")
                     .bold()
