@@ -66,6 +66,7 @@ struct AddIssueView: View {
             let newIssue = Issue(context: viewContext)
             newIssue.title = summaryText
             newIssue.contents = descriptionText
+            newIssue.priority = issuePriority
             newIssue.project = project
             
             do {
