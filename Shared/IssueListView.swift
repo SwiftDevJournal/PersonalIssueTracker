@@ -12,6 +12,8 @@ struct IssueListView: View {
     @State private var showAddSheet = false
     @State private var selection: Issue? = nil
     @Environment(\.managedObjectContext) private var viewContext
+    // Workaround to get the list to refresh when closing an issue.
+    @State private var refreshID = UUID()
     
     // I need to add a fetch request that fetches all the open issues in the current project.
     
@@ -24,6 +26,7 @@ struct IssueListView: View {
                     Text(issue.title ?? "")
                 }
             }
+            .id(refreshID)
             HStack {
                 Button(action: { showAddSheet = true }, label: {
                     Label("Add", systemImage: "note.text.badge.plus")
@@ -59,6 +62,8 @@ struct IssueListView: View {
     
     func closeIssue(_ issue: Issue) {
         issue.open = false
+        // Change the refreshID to get the list to update when closing the issue.
+        refreshID = UUID()
         
         do {
             try viewContext.save()
