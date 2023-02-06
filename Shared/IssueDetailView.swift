@@ -26,13 +26,15 @@ struct IssueDetailView: View {
                 Text("Description: ")
                 TextEditor(text: $descriptionText)
             }
-            // FIXME: Change the priority level when making a change from the menu.
             Picker("Issue Priority:", selection: $issuePriority) {
                 ForEach(IssuePriority.allCases, id: \.self) { priority in
                     let menuText = priority.stringValue()
                     Text("\(menuText)")
                         .tag(priority)
                 }
+            }
+            .onChange(of: issuePriority) { newValue in
+                issue.priority = issuePriority
             }
             
             VStack {
