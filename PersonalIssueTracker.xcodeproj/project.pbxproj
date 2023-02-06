@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D262857293D33080029B5ED /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D262856293D33080029B5ED /* Issue.swift */; };
+		4D262858293D33080029B5ED /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D262856293D33080029B5ED /* Issue.swift */; };
 		4D4D6E3B28C136DE005D5C91 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E3A28C136DE005D5C91 /* Tests_iOS.swift */; };
 		4D4D6E3D28C136DE005D5C91 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E3C28C136DE005D5C91 /* Tests_iOSLaunchTests.swift */; };
 		4D4D6E4728C136DE005D5C91 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D6E4628C136DE005D5C91 /* Tests_macOS.swift */; };
@@ -59,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D262855293D321D0029B5ED /* Version 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Version 2.xcdatamodel"; sourceTree = "<group>"; };
+		4D262856293D33080029B5ED /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 		4D4D6E2028C136DC005D5C91 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		4D4D6E2128C136DC005D5C91 /* PersonalIssueTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalIssueTrackerApp.swift; sourceTree = "<group>"; };
 		4D4D6E2228C136DC005D5C91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				4D4D6E6428C2953C005D5C91 /* AddProjectView.swift */,
 				4D4D6E2428C136DE005D5C91 /* Assets.xcassets */,
 				4D85946A28C7BBC80006AA01 /* CommentView.swift */,
+				4D262856293D33080029B5ED /* Issue.swift */,
 				4D4D6E7428C3DA26005D5C91 /* IssueDetailView.swift */,
 				4D5008AC28E2296C00B9BEC0 /* IssueList.swift */,
 				4D4D6E6B28C2EB5C005D5C91 /* IssueListView.swift */,
@@ -356,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D4D6E6528C2953C005D5C91 /* AddProjectView.swift in Sources */,
+				4D262857293D33080029B5ED /* Issue.swift in Sources */,
 				4D4D6E7528C3DA26005D5C91 /* IssueDetailView.swift in Sources */,
 				4D4D6E4C28C136DE005D5C91 /* PersonalIssueTrackerApp.swift in Sources */,
 				4D4D6E5028C136DE005D5C91 /* Persistence.swift in Sources */,
@@ -376,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D4D6E6628C2953C005D5C91 /* AddProjectView.swift in Sources */,
+				4D262858293D33080029B5ED /* Issue.swift in Sources */,
 				4D4D6E7628C3DA26005D5C91 /* IssueDetailView.swift in Sources */,
 				4D4D6E4D28C136DE005D5C91 /* PersonalIssueTrackerApp.swift in Sources */,
 				4D4D6E5128C136DE005D5C91 /* Persistence.swift in Sources */,
@@ -784,9 +791,10 @@
 		4D4D6E1F28C136DC005D5C91 /* PersonalIssueTracker.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				4D262855293D321D0029B5ED /* Version 2.xcdatamodel */,
 				4D4D6E2028C136DC005D5C91 /* Shared.xcdatamodel */,
 			);
-			currentVersion = 4D4D6E2028C136DC005D5C91 /* Shared.xcdatamodel */;
+			currentVersion = 4D262855293D321D0029B5ED /* Version 2.xcdatamodel */;
 			path = PersonalIssueTracker.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
