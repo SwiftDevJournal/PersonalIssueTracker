@@ -15,14 +15,12 @@ struct IssueListView: View {
     // Workaround to get the list to refresh when closing an issue.
     @State private var refreshID = UUID()
     
-    // I need to add a fetch request that fetches all the open issues in the current project.
-    
     var body: some View {
         VStack {
             Text("Open Issues")
                 .font(.title)
             List(openIssues) { issue in
-                NavigationLink(destination: IssueDetailView(issue: issue, titleText: issue.title ?? "", descriptionText: issue.contents ?? ""), tag: issue, selection: $selection) {
+                NavigationLink(destination: IssueDetailView(issue: issue, titleText: issue.title ?? "", descriptionText: issue.contents ?? "", issuePriority: issue.priority), tag: issue, selection: $selection) {
                     Text(issue.title ?? "")
                 }
             }
@@ -34,8 +32,6 @@ struct IssueListView: View {
 
                 Spacer()
 
-                // How do I get the list to refresh after closing the issue?
-                // The project list refreshes after deleting a project, but this list doesn't refresh when closing an issue?
                 Button(action: {
                     closeIssue(selection!)
                 }, label: {
@@ -50,7 +46,6 @@ struct IssueListView: View {
         }
     }
     
-    // How can I update open issues when closing an issue?
     var openIssues: [Issue] {
         let allIssues = project.issues?.allObjects as? [Issue] ?? []
         let openOnes = allIssues.filter {
