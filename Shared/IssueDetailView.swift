@@ -47,6 +47,7 @@ struct IssueDetailView: View {
             .padding()
             AddCommentView(issue: issue)
         }
+        .padding(.horizontal)
     }
     
     var commentArray: [Comment] {
