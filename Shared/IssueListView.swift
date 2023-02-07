@@ -25,6 +25,14 @@ struct IssueListView: View {
                 }
             }
             .id(refreshID)
+            Text("Closed Issues")
+                .font(.title)
+            List(closedIssues) { issue in
+                NavigationLink(destination: IssueDetailView(issue: issue, titleText: issue.title ?? "", descriptionText: issue.contents ?? "", issuePriority: issue.priority), tag: issue, selection: $selection) {
+                    Text(issue.title ?? "")
+                }
+            }
+            .id(refreshID)
             HStack {
                 Button(action: { showAddSheet = true }, label: {
                     Label("Add", systemImage: "note.text.badge.plus")
@@ -52,6 +60,14 @@ struct IssueListView: View {
             $0.open == true
         }
         return openOnes
+    }
+    
+    var closedIssues: [Issue] {
+        let allIssues = project.issues?.allObjects as? [Issue] ?? []
+        let closedOnes = allIssues.filter {
+            $0.open == false
+        }
+        return closedOnes
     }
     
     func closeIssue(_ issue: Issue) {
