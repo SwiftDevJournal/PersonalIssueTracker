@@ -59,7 +59,10 @@ struct IssueListView: View {
         let openOnes = allIssues.filter {
             $0.open == true
         }
-        return openOnes
+        // Sort issues by priority level, with highest priority at the top.
+        return openOnes.sorted(by: {
+            $0.priorityLevel > $1.priorityLevel
+        })
     }
     
     var closedIssues: [Issue] {
